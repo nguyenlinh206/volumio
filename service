@@ -1,0 +1,13 @@
+[Unit]
+Description=Longmobi-Zing-mp3
+After=multi-user.target
+
+
+[Service]
+Type=simple
+WorkingDirectory=/data/plugins/music_service/longmobi_zingdemo/bin
+ExecStart=/usr/bin/python3 beginzing.py
+
+
+[Install]
+WantedBy=multi-user.target
